@@ -34,8 +34,8 @@ This is a frontend project which implements a FAQ Accordion Card. Users should b
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-faq-accordion-card-using-html-and-css-only-ByOPtY5r5)
+- Live Site URL: (https://faq-accordion-card-8d9f8f.netlify.app/)
 
 ## My process
 
