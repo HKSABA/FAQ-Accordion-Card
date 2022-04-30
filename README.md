@@ -28,9 +28,9 @@ This is a frontend project which implements a FAQ Accordion Card. Users should b
 
 ### Screenshot
 
-- [Desktop-Screenshot](./Screenshots/Desktop-Screenshot.png)
-- [Mobile-Portrait-Screenshot](./Screenshots/Mobile-Portrait-Screenshot.png)
-- [Mobile-Landscape-Screenshot](./Screenshots/Mobile-Landscape-Screenshot.png)
+- [Desktop-Screenshot](./screenshots/Desktop-Screenshot.png)
+- [Mobile-Portrait-Screenshot](./screenshots/Mobile-Portrait-Screenshot.png)
+- [Mobile-Landscape-Screenshot](./screenshots/Mobile-Landscape-Screenshot.png)
 
 ### Links
 
