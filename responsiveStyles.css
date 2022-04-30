@@ -1,0 +1,583 @@
+/* ---------- Responsive styles - Small to Big screen ---------- */
+
+/* -------------------------------------------------------- VERTICAL -------------------------------------------------------- */
+
+/* ----------- Portrait view general styles ---------- */
+
+@media only screen and (min-width: 375px) and (max-width: 1440px) and (orientation: portrait) {
+  .card {
+    margin-top: 10vh;
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  /* Card Top */
+
+  .card_img_container {
+    width: 100%;
+    height: 20%;
+    overflow: visible;
+  }
+
+  .illustration {
+    width: 70%;
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    align-self: center;
+  }
+
+  #woman-platform-icon {
+    content: url(./images/illustration-woman-online-mobile.svg);
+    width: 100%;
+    position: absolute;
+    align-self: center;
+  }
+
+  #box-icon {
+    content: none;
+    display: none;
+  }
+
+  /* Card Bottom */
+
+  .card_FAQ_container {
+    width: 100%;
+    height: 80%;
+  }
+  .card_FAQ_container > h1 {
+    padding-top: 8px;
+    text-align: center;
+  }
+
+  .answer {
+    margin-right: 20px;
+    width: fit-content;
+  }
+
+  .faq:focus-within > input[type="checkbox"]:checked ~ #one,
+  .faq:focus-within > input[type="checkbox"]:checked ~ #three,
+  .faq:focus-within > input[type="checkbox"]:checked ~ #five {
+    height: 68px;
+  }
+}
+
+/* -------------------- Smartphone -------------------- */
+
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+  .card {
+    width: 300px;
+    height: 500px;
+    box-shadow: -15px 30px 15px -15px rgba(40, 40, 85, 0.35);
+  }
+
+  #woman-platform-icon {
+    top: -95px;
+  }
+
+  .card_FAQ_container {
+    padding: 18px;
+    padding-top: 8px;
+  }
+  .card_FAQ_container > h1 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .faq {
+    padding-top: 14px;
+  }
+  .question {
+    padding-bottom: 14px;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ .answer {
+    padding-bottom: 14px;
+  }
+
+  .faq:focus-within > input[type="checkbox"]:checked ~ #three {
+    height: 80px;
+  }
+}
+
+/* ----- For short heights ----- */
+
+@media only screen and (min-width: 375px) and (max-height: 660px) and (orientation: portrait) {
+  .card {
+    height: 432px;
+  }
+
+  .card_FAQ_container {
+    padding-top: 4px;
+  }
+  .card_FAQ_container > h1 {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+
+  .faq {
+    padding-top: 12px;
+  }
+  .question {
+    padding-bottom: 12px;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ .answer {
+    padding-bottom: 12px;
+  }
+  .answer {
+    margin-right: 14px;
+  }
+
+  .faq:focus-within > input[type="checkbox"]:checked ~ #three {
+    height: 70px;
+  }
+}
+
+/* ----------- Tablet/ iPad ----------- */
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .card {
+    width: 400px;
+    height: 620px;
+    box-shadow: -20px 40px 20px -20px rgba(40, 40, 85, 0.35);
+  }
+
+  .illustration {
+    width: 74%;
+  }
+  #woman-platform-icon {
+    top: -134px;
+  }
+
+  .card_FAQ_container {
+    padding: 28px;
+  }
+  .card_FAQ_container > h1 {
+    padding: 8px 0;
+  }
+
+  .faq {
+    padding-top: 18px;
+  }
+  .question {
+    padding-bottom: 18px;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ .answer {
+    padding-bottom: 18px;
+  }
+}
+
+/* ----------- Large Tablet/ iPad ----------- */
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
+  .card {
+    width: 560px;
+    height: 800px;
+  }
+
+  .card_img_container {
+    height: 25%;
+  }
+
+  .illustration {
+    width: 78%;
+  }
+  #woman-platform-icon {
+    top: -196px;
+  }
+
+  .card_FAQ_container {
+    height: 75%;
+    padding: 25px 50px;
+  }
+  .card_FAQ_container > h1 {
+    padding: 16px 0;
+    font-size: 32px;
+  }
+
+  .faq {
+    padding-top: 20px;
+  }
+  .question {
+    padding-bottom: 20px;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ .answer {
+    padding-bottom: 20px;
+    height: 60px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------ HORIZONTAL ------------------------------------------------------ */
+
+/* ----------- Landscape view general styles ---------- */
+
+@media only screen and (min-width: 375px) and (orientation: landscape) {
+  .card {
+    margin: auto;
+    flex-direction: row;
+  }
+
+  /* Card Left */
+
+  .card_img_container,
+  .card_FAQ_container {
+    height: 100%;
+  }
+
+  .card_img_container {
+    overflow: hidden;
+  }
+
+  .illustration {
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: fill;
+    background-position: 100% 64%;
+  }
+
+  #woman-platform-icon {
+    content: url(./images/illustration-woman-online-desktop.svg);
+  }
+
+  .illustration,
+  #woman-platform-icon {
+    width: fit-content;
+    align-self: flex-end;
+  }
+
+  #box-icon {
+    content: url(./images/illustration-box-desktop.svg);
+    position: absolute;
+    z-index: 3;
+  }
+
+  /* Card Right */
+
+  .answer {
+    width: fit-content;
+  }
+}
+
+/* -------------------- Smartphone -------------------- */
+
+@media only screen and (min-width: 375px) and (max-height: 800px) and (orientation: landscape) {
+  .card {
+    box-shadow: -15px 30px 15px -15px rgba(40, 40, 85, 0.35);
+  }
+
+  .card_img_container {
+    width: 40%;
+  }
+  .illustration {
+    background-size: 250%;
+    background-position: 100% 60%;
+  }
+  #woman-platform-icon {
+    width: 120%;
+  }
+  #box-icon {
+    width: 90px;
+    left: -44px;
+    top: 128px;
+  }
+
+  .card_FAQ_container {
+    width: 60%;
+    padding: 26px 30px;
+    padding-top: 22px;
+  }
+
+  .card_FAQ_container > h1 {
+    margin-bottom: 6px;
+    font-size: 20px;
+  }
+
+  .faq {
+    padding-top: 9px;
+    font-size: 10px;
+  }
+  .question {
+    padding-bottom: 9px;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ .answer {
+    padding-bottom: 9px;
+  }
+  .answer {
+    margin-right: 8px;
+  }
+
+  .faq:focus-within > input[type="checkbox"]:checked ~ #two,
+  .faq:focus-within > input[type="checkbox"]:checked ~ #four {
+    height: 44px;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ #three {
+    height: 60px;
+  }
+
+  .attribution {
+    bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-height: 800px) and (orientation: landscape) {
+  .card {
+    width: 440px;
+    height: 300px;
+  }
+
+  .illustration {
+    background-size: 290%;
+    background-position: 100% 66%;
+  }
+  #box-icon {
+    width: 68px;
+    left: -32px;
+    top: 136px;
+  }
+
+  .card_FAQ_container {
+    padding: 26px;
+    padding-top: 20px;
+  }
+
+  .card_FAQ_container > h1 {
+    font-size: 18px;
+  }
+
+  .answer .faq:focus-within > input[type="checkbox"]:checked ~ #three {
+    height: 64px;
+  }
+}
+
+@media only screen and (min-width: 575px) and (max-height: 800px) and (orientation: landscape) {
+  .card {
+    width: 500px;
+    height: 300px;
+  }
+
+  .illustration {
+    background-size: 250%;
+    background-position: 100% 66%;
+  }
+  #box-icon {
+    width: 88px;
+    left: -42px;
+    top: 130px;
+  }
+
+  .faq {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-height: 800px) and (orientation: landscape) {
+  .card {
+    width: 580px;
+    height: 300px;
+  }
+
+  #box-icon {
+    width: 94px;
+    left: -44px;
+    top: 130px;
+  }
+}
+
+@media only screen and (min-width: 775px) and (max-height: 800px) and (orientation: landscape) {
+  .card {
+    width: 620px;
+    height: 300px;
+  }
+
+  #box-icon {
+    width: 100px;
+    left: -48px;
+    top: 128px;
+  }
+
+  .card_FAQ_container {
+    width: 60%;
+    padding: 20px 24px;
+  }
+
+  .card_FAQ_container > h1 {
+    font-size: 22px;
+  }
+}
+
+/* ---------- Small Tablet/ Ipad ---------- */
+
+@media only screen and (min-width: 840px) and (min-height: 660px) and (orientation: landscape) {
+  .card {
+    width: 740px;
+    height: 500px;
+    box-shadow: -1px 20px 45px 5px rgba(40, 40, 85, 0.35);
+  }
+
+  .card_img_container {
+    width: 50%;
+  }
+  .illustration {
+    background-size: 240%;
+    background-position: 100% 66%;
+  }
+  #woman-platform-icon {
+    width: 120%;
+  }
+
+  #box-icon {
+    width: 165px;
+    left: -80px;
+    top: 216px;
+  }
+
+  .card_FAQ_container {
+    width: 50%;
+    padding: 45px;
+    padding-top: 50px;
+  }
+  .card_FAQ_container > h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  .faq {
+    padding-top: 18px;
+    font-size: 12px;
+  }
+  .question {
+    padding-bottom: 18px;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ .answer {
+    padding-bottom: 18px;
+  }
+
+  .answer {
+    margin-right: 20px;
+    line-height: 20px;
+  }
+
+  .faq:focus-within > input[type="checkbox"]:checked ~ #one {
+    height: 64px;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ #three,
+  .faq:focus-within > input[type="checkbox"]:checked ~ #five {
+    height: 68px;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ #two,
+  .faq:focus-within > input[type="checkbox"]:checked ~ #four {
+    height: 54px;
+  }
+}
+
+/* ---------- Medium / Large Tablet or Ipad ---------- */
+
+@media only screen and (min-width: 940px) and (min-height: 660px) and (orientation: landscape) {
+  .card {
+    width: 840px;
+  }
+
+  #box-icon {
+    width: 170px;
+    left: -82px;
+    top: 214px;
+  }
+
+  .card_FAQ_container {
+    width: 62%;
+    padding: 60px;
+  }
+
+  .faq:focus-within > input[type="checkbox"]:checked ~ .answer {
+    height: 54px !important;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ #three {
+    height: 70px !important;
+  }
+}
+
+/* ---------- Laptop & Desktop ---------- */
+
+@media only screen and (min-width: 1024px) and (min-height: 700px) and (orientation: landscape) {
+  .card {
+    width: 900px;
+    box-shadow: 0 24px 30px 0 rgba(40, 40, 85, 0.35);
+  }
+
+  #box-icon {
+    width: 180px;
+    left: -88px;
+    top: 214px;
+  }
+
+  .card_FAQ_container {
+    width: 60%;
+    padding: 60px 80px;
+  }
+  .card_FAQ_container > h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+
+  .answer {
+    line-height: 20px;
+  }
+}
+
+/* 
+  Extra small screens
+*/
+
+@media only screen and (max-width: 480px) and (max-height: 500px) and (orientation: landscape) {
+  .card {
+    width: 365px;
+    height: 280px;
+  }
+
+  .card_img_container {
+    display: none;
+  }
+
+  .card_FAQ_container {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .faq {
+    font-size: 10px;
+  }
+
+  .faq:focus-within > input[type="checkbox"]:checked ~ .answer {
+    height: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) and (max-height: 500px) and (orientation: portrait) {
+  .card {
+    margin: auto;
+    width: 350px;
+    height: 310px;
+  }
+
+  .card_img_container {
+    display: none;
+  }
+
+  .card_FAQ_container {
+    height: 100%;
+    padding: 12px 18px;
+  }
+
+  .faq {
+    font-size: 10px;
+  }
+
+  .faq:focus-within > input[type="checkbox"]:checked ~ .answer {
+    height: 48px !important;
+  }
+  .faq:focus-within > input[type="checkbox"]:checked ~ #three {
+    height: 56px !important;
+  }
+}

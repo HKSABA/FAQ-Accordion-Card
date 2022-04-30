@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsiveStyles.css" />
+
+    <title>FAQ Accordion Card | Frontend Mentor</title>
+  </head>
+
+  <body class="arrangement">
+    <!-- Card -->
+    <div class="card arrangement">
+      <!-- Left / Top section of card -->
+      <div class="card_img_container arrangement">
+        <!-- Container for the main illustration -->
+        <div class="illustration arrangement">
+          <!-- Desktop / Mobile woman platform illustration -->
+          <div id="woman-platform-icon"></div>
+          <!-- Box Icon (only for landscape mode) -->
+          <div id="box-icon"></div>
+        </div>
+      </div>
+
+      <!-- Right / Bottom section of card -->
+      <div class="card_FAQ_container arrangement">
+        <!-- Title of section -->
+        <h1>FAQ</h1>
+
+        <!-- Container for a FAQ - has question and answer -->
+        <div class="faq arrangement" tabindex="1">
+          <!-- Input to connect the label to, but this will remain hidden -->
+          <input type="checkbox" id="answer1" unchecked />
+
+          <!-- question -->
+          <div class="question arrangement">
+            How many team members can I invite?
+
+            <!-- Drop down arrow symbol which shows or hides the answer on click -->
+            <label for="answer1">
+              <img class="arrow" src="./images/icon-arrow-down.svg" alt=""
+            /></label>
+          </div>
+
+          <!-- answer -- This is expandible/ collapsible -->
+          <div id="one" class="arrangement answer">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </div>
+        </div>
+
+        <!-- FAQ container -->
+        <div class="faq arrangement" tabindex="2">
+          <input type="checkbox" id="answer2" unchecked />
+
+          <!-- question -->
+          <div class="question arrangement">
+            What is the maximum file upload size?
+
+            <!-- Arrow to show/ hide answer -->
+            <label for="answer2">
+              <img class="arrow" src="./images/icon-arrow-down.svg" alt=""
+            /></label>
+          </div>
+
+          <!-- Expandable/ Collapsible answer -->
+          <div id="two" class="arrangement answer">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </div>
+        </div>
+
+        <!-- FAQ container -->
+        <div class="faq arrangement" tabindex="3">
+          <input type="checkbox" id="answer3" unchecked />
+
+          <!-- question -->
+          <div class="question arrangement">
+            How do I reset my password?
+
+            <!-- Arrow to show/ hide answer -->
+            <label for="answer3">
+              <img class="arrow" src="./images/icon-arrow-down.svg" alt=""
+            /></label>
+          </div>
+
+          <!-- Expandable/ Collapsible answer -->
+          <div id="three" class="arrangement answer">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </div>
+        </div>
+
+        <!-- FAQ container -->
+        <div class="faq arrangement" tabindex="4">
+          <input type="checkbox" id="answer4" unchecked />
+
+          <!-- question -->
+          <div class="question arrangement">
+            Can I cancel my subscription?
+
+            <!-- Arrow to show/ hide answer -->
+            <label for="answer4">
+              <img class="arrow" src="./images/icon-arrow-down.svg" alt=""
+            /></label>
+          </div>
+
+          <!-- Expandable/ Collapsible answer -->
+          <div id="four" class="arrangement answer">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </div>
+        </div>
+
+        <!-- FAQ container -->
+        <div class="faq arrangement" tabindex="5">
+          <input type="checkbox" id="answer5" unchecked />
+
+          <!-- question -->
+          <div class="question arrangement">
+            Do you provide additional support?
+
+            <!-- Arrow to show/ hide answer -->
+            <label for="answer5">
+              <img class="arrow" src="./images/icon-arrow-down.svg" alt=""
+            /></label>
+          </div>
+
+          <!-- Expandable/ Collapsible answer -->
+          <div id="five" class="arrangement answer">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Attribution -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Hajera Khatun Saba</a>.
+    </div>
+  </body>
+</html>

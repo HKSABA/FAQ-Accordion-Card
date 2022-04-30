@@ -1,0 +1,161 @@
+/* 
+  General Styles 
+*/
+
+/* Importing Kumbh Sans - weights 400 and 700 */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  /* Colors */
+
+  /* Background gradient:  */
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+
+  /* Neutral  */
+  /* Text  */
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+  /* Primary */
+  /* Text  */
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+
+  /* Dividers  */
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+  background-repeat: no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+/* Outer div styles */
+
+.arrangement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.card_FAQ_container {
+  display: block;
+}
+
+/* Image styles */
+
+.illustration {
+  height: 100%;
+}
+
+#woman-platform-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Inner div styles */
+
+.card_FAQ_container > h1 {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+}
+
+.faq {
+  width: 100%;
+  border-bottom: 1px solid var(--Light-grayish-blue);
+  align-items: flex-start;
+}
+
+.question {
+  width: inherit;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--Very-dark-grayish-blue);
+  font-weight: 400;
+  transition: color 0.4s linear;
+  cursor: pointer;
+}
+
+.question:hover {
+  color: var(--Soft-red);
+}
+
+.arrow {
+  transition: transform 0.8s linear;
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+.answer {
+  margin-right: 12px;
+  height: 0;
+  overflow: hidden;
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  line-height: 18px;
+  transition: height 0.8s linear, padding 0.8s linear;
+}
+
+/* Focus styles */
+
+.faq:focus-within > input[type="checkbox"]:checked + .question {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+}
+
+.faq:focus-within > input[type="checkbox"]:checked + .question > label > img {
+  transform: rotate(180deg);
+}
+
+.faq:focus-within > input[type="checkbox"]:checked ~ .answer {
+  display: flex;
+  height: 54px;
+}
+
+/* Attribution at the bottom */
+
+.attribution {
+  position: fixed;
+  bottom: 20px;
+  font-size: 11px;
+  color: var(--Light-grayish-blue);
+  color: whitesmoke;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+.attribution a {
+  color: var(--Light-grayish-blue);
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.4ms;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
