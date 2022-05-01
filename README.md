@@ -28,9 +28,9 @@ This is a frontend project which implements a FAQ Accordion Card. Users should b
 
 ### Screenshot
 
-- [Desktop-Screenshot](./screenshots/Desktop-Screenshot.png)
-- [Mobile-Portrait-Screenshot](./screenshots/Mobile-Portrait-Screenshot.png)
-- [Mobile-Landscape-Screenshot](./screenshots/Mobile-Landscape-Screenshot.png)
+- [Desktop-Screenshot](./screenshots/Desktop-Screenshot.jpg)
+- [Mobile-Portrait-Screenshot](./screenshots/Mobile-Portrait-Screenshot.jpg)
+- [Mobile-Landscape-Screenshot](./screenshots/Mobile-Landscape-Screenshot.jpg)
 
 ### Links
 
@@ -64,7 +64,7 @@ Below, I have highlighted some key areas that I have learnt while working on thi
 
   - This part of the project was particularly challenging because I had little idea of the elements I should use along with a clever combination of CSS to achieve the desired results without Javascript.
 
-    - At first, I learnt that in order to track and utilize the click event of the drop-down arrow with only CSS, it is necessary to use specific pseudo classes.
+   - At first, I learnt that in order to track and utilize the click event of the drop-down arrow with only CSS, it is necessary to use specific pseudo classes.
 
     - I learnt that the correct approach is to use checkbox type input for the Faq questions and a corresponding `<label>` tag with the same unique `id`. Thus, the `:checked` property can be used with the `<input>` tag to target and style the respective labels, questions and answers.
 
